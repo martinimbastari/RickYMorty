@@ -1,9 +1,8 @@
-import Card from "./Card"
-import styled from "styled-components"
+import { useParams } from "react-router-dom"
 
-const CardsContainer = () => {
-    
-    
+function Detail(){
+    const params = useParams()
+
     let arr = [
         {key: 1,name: "Juan", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOaKSzDxYs5h688ljfy0SPQMJXo8KnY6Hcug&usqp=CAU", status: "Alive", location: "Paraná"},
         {key: 2, name:"Martin San Juan", url:"https://www.cronista.com/files/image/296/296981/5ffe0bca443ed.jpg", status:"Alive", location: "Madrid"},
@@ -13,16 +12,19 @@ const CardsContainer = () => {
         {key: 6,name:"Rogelio Ramirez Camona", url:"https://media.a24.com/p/cd226781b1e5bcbdc244886b2af53444/adjuntos/296/imagenes/008/807/0008807281/1200x900/smart/la-roca-johnsonjpg.jpg", status:"Alive", location: "Santiago de Cali"}
     ]
 
-    const Contenedor = styled.div`
-        display: flex;
-        flex-wrap: wrap;
-    `
+    const res = arr.filter( obj => obj.key === Number(params.id))
     
-    return (
-        <Contenedor>
-            {arr.map( obj => <Card id={obj.key} url={obj.url} name={obj.name} status={obj.status} location={obj.location}/>)}
-        </Contenedor>
+    // params.id = 6
+    // res = [{key: 6,name:"Rogelio Ramirez Camona", url:"https://media.a24.com/p/cd226781b1e5bcbdc244886b2af53444/adjuntos/296/imagenes/008/807/0008807281/1200x900/smart/la-roca-johnsonjpg.jpg", status:"Alive", location: "Santiago de Cali"}]
+    
+    console.log(params.id);
+    return(
+        <div>
+            <h1>detalle</h1>
+            {res[0].name}
+            {res[0].status}
+        </div>
     )
 }
 
-export default CardsContainer
+export default Detail
