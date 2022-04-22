@@ -1,0 +1,14 @@
+.card{
+    border: solid 2px #000;
+    width: 20%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid 4px #f07800;
+    object-fit: cover;
+    height: 400px;
+}
