@@ -12,11 +12,16 @@ const CardsContainer = () => {
 
     const url = "https://rickandmortyapi.com/api/character"
 
-    useEffect(() => {
+    function fetchingData(){
         fetch(url)
             .then(data => data.json())
             .then(res => setApiInfo(res.results))
             .catch(e => console.log(e))
+    }
+
+    useEffect(() => {
+        fetchingData()
+        return fetchingData()
     },[])
     
     return (
