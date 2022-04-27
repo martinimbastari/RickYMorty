@@ -1,0 +1,43 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.linkContainer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px black;
+    
+}
+
+.botonCreate {
+        font-weight: 600;
+        font-size: 15px;
+        color: rgb(231, 232, 233);
+        padding: 5px 10px 5px 10px;
+        margin: 10px;
+        border: none;
+        box-shadow: 1px 1px 5px rgb(0, 4, 11);
+        border-radius: 5px;
+        background: rgb(0, 210, 210);
+        border: 1px solid rgba(60, 60, 237, 0);
+}
+
+.botonCreate:hover {
+    cursor: pointer;
+    transition: all 0.8ms;
+    background: rgb(237, 237, 238);
+    color:  rgb(0, 208, 208) ;
+    border: 1px solid rgb(4, 210, 210);
+}
+

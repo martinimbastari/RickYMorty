@@ -1,14 +1,102 @@
-.card{
-    border: solid 2px #000;
-    width: 20%;
-    border-radius: 10px;
+.card {
+    border: solid 2px #000000;
+    width: 25%;
+    border-radius: 12px;
     margin: 20px;
+    box-shadow: 2px 2px 10px rgb(52, 52, 52);
+    height: fit-content;
+    height: 300px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
 }
 
-.card img{
+.card:hover {
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    background-color: #EBD8C3;
+    height: 450px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+    
+}
+
+.card img {
     width: 100%;
-    border-radius: 10px 10px 0 0;
-    border-bottom: solid 4px #f07800;
-    object-fit: cover;
-    height: 400px;
+    height:250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px    #353535;
+}
+
+.pDescription {
+    text-align: start;
+    padding: 0px 0px 0px 8px;
+    color: rgb(49, 49, 49);
+    font-size: large;
+}
+
+.Alive{
+    position: absolute;
+    margin: 6px;
+    background-color: rgb(153, 255, 0);
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.319);
+    font-size: large;
+}
+.Dead{
+    position: absolute;
+    margin: 6px;
+    background-color: rgb(248, 1, 1);
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.319);
+    font-size: large;
+}
+.unknown{
+    position: absolute;
+    margin: 6px;
+    background-color: rgb(255, 187, 0);
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.319);
+    font-size: large;
+}
+
+.location {
+    color: black;
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.botonCard {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: rgb(223, 21, 28);
+    color: wheat;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.botonCard:hover {
+    cursor: pointer;
+    background: rgb(255, 0, 8);
 }

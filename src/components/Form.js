@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "../styles/form.css"
 
 export default function Form() {
     const [ formulario, setFormulario ] = useState({name: "", status: "", location: ""})
@@ -17,16 +18,28 @@ export default function Form() {
     }
 
     return (
-        <div>
+        <div className='Contenedor'>
+            <div className='templateForm'>
+            <div className='imgContainer'>
+            </div>
+
             <form onSubmit={ e => handleSubmit(e)}>
-                <label>Name: </label>
-                <input type="text" value={name} name="name" onChange={ e => handleChange(e)}/>
-                <label>Status: </label>
-                <input type="text" value={status} name="status" onChange={e => handleChange(e)}/>
-                <label>Location: </label>
-                <input type="text" value={location} name="location" onChange={e => handleChange(e)}/>
-                <button type="submit">Create</button>
+                <h2>Comencemos a crearlo</h2>
+                <p>Name </p>
+                <input type="text"  value={name} name="name" onChange={ e => handleChange(e)}/>
+                
+                
+                <p>Status </p>
+                <input type="text"  value={status} name="status" onChange={e => handleChange(e)}/>
+                
+                
+                <p>Location </p>
+                <input type="text"  value={location} name="location" onChange={e => handleChange(e)}/> <br/>
+                    
+                
+                <button className='botonAdd' type="submit">Create</button>
             </form>
+        </div>
         </div>
     )
 }

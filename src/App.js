@@ -1,7 +1,7 @@
 import CardsContainer from "./components/CardsContainer"
 import { Routes, Route } from "react-router-dom"
 import Landing from "./components/Landing"
-import Detail from "./components/Datail"
+import Detail from "./components/Detail"
 import Form from "./components/Form"
 import Home from "./components/Home"
 

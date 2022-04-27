@@ -1,0 +1,88 @@
+
+
+.Contenedor {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/rickandmortycreate.jpg") center no-repeat fixed;
+    background-size:cover;
+}
+
+.templateForm {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(29, 29, 29, 0.921);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.imgContainer {
+    border-radius: 20px 0px 0px 20px;
+    border: 2px 0px 0px 2px solid rgb(8, 8, 8);
+    background: url("../assets/personaje.jpg") center ;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.templateForm form {
+    text-align: center;
+    margin: 0px auto;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.templateForm form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: aliceblue;
+}
+
+.templateForm  form  input {
+   padding: 5px 10px;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 5px;
+   font-size: 20px;
+   width: 50%;
+   
+   
+}
+
+.templateForm  form input:hover {
+    background-color: rgba(255, 255, 255, 0.592);
+    border: 2px solid rgba(255, 255, 255, 0.592);
+}
+
+.templateForm  form  p {
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+    font-weight: 600;
+} 
+
+
+
+.botonAdd {
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(231, 232, 233);
+    box-shadow: 2px 2px 5px rgb(0, 4, 11);
+    border-radius: 5px;
+    background: rgb(0, 210, 210);
+    border: 1px solid rgba(60, 60, 237, 0);
+}
+
+.botonAdd:hover {
+    cursor: pointer;
+    transition: all 0.8ms;
+    background: rgb(237, 237, 238);
+    color:  rgb(0, 208, 208) ;
+    border: 1px solid rgb(4, 210, 210);
+}

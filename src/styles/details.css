@@ -1,0 +1,80 @@
+
+.container {
+    display: flex;
+    margin: 0px;
+    padding: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/rickandmortycontainer.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(80, 80, 80, 0.557);
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+
+.infoAbout {
+    display: flex;
+    font-size: 24px;
+    margin: 10px;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(80, 80, 80, 0.557);
+    border-radius: 10px;
+    text-align: start;
+    color: aliceblue;
+}
+
+
+
+.img {
+    width: 100%;
+    border-radius:10px 10px 0px 0px;
+    /* border-radius: 50%;
+    width: fit-content;
+    width: 250px;
+    height: 250px; */
+}
+
+.titleDetails {
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin: 30px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.titleDetails span {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.pDetails {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    width: 80%;
+}
+
+.aboutTitle {
+    margin:10px
+}
+
+.aboutP {
+    margin: 10px;
+}
