@@ -1,30 +1,26 @@
-.card {
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: solid 2px #000000;
-    width: 25%;
+    width: 300px;
     border-radius: 12px;
     margin: 20px;
     box-shadow: 2px 2px 10px rgb(52, 52, 52);
-    height: fit-content;
-    height: 300px;
-    overflow: hidden;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(20px);
+    transition: all .1s ;
 }
 
-.card:hover {
+.cards:hover {
     cursor: pointer;
-    overflow: hidden;
-    transition: all .4s ease-in-out;
-    background-color: #EBD8C3;
-    height: 450px;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-
-    
+    transform: scale(1.1, 1.1);
+    background-color: rgba(255, 255, 255, 0.91);  
 }
 
-.card img {
+.cards img {
     width: 100%;
-    height:250px;
+    height:100%;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -43,30 +39,39 @@
 }
 
 .Alive{
+    top: 0;
+    right:0;
     position: absolute;
     margin: 6px;
     background-color: rgb(153, 255, 0);
-    color: black;
+    color: rgb(37, 37, 37);
+    font-weight: 700;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.319);
     font-size: large;
 }
 .Dead{
+    top: 0;
+    right:0;
     position: absolute;
     margin: 6px;
     background-color: rgb(248, 1, 1);
-    color: black;
+    color: rgb(37, 37, 37);
+    font-weight: 700;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.319);
     font-size: large;
 }
 .unknown{
+    top: 0;
+    right:0;
     position: absolute;
     margin: 6px;
     background-color: rgb(255, 187, 0);
-    color: black;
+    color: rgb(37, 37, 37);
+    font-weight: 700;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.319);
@@ -88,8 +93,8 @@ h1 {
     padding: 10px;
     margin: 10px;
     border: none;
-    background: rgb(223, 21, 28);
-    color: wheat;
+    background: rgb(0, 183, 211);
+    color: rgb(247, 240, 227);
     font-weight: 700;
     font-size: 15px;
     border-radius: 5px;
@@ -98,5 +103,5 @@ h1 {
 
 .botonCard:hover {
     cursor: pointer;
-    background: rgb(255, 0, 8);
+    background-color: rgb(0, 216, 216);
 }

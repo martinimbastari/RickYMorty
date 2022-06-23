@@ -1,13 +1,13 @@
 
 
-.Contenedor {
+/* .Contenedor {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     background: url("../assets/rickandmortycreate.jpg") center no-repeat fixed;
     background-size:cover;
-}
+} */
 
 .templateForm {
     margin-left: 20px;
@@ -16,6 +16,7 @@
     width: 60%;
     height: 80%;
     background-color: rgba(29, 29, 29, 0.921);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
     box-shadow: 1px 1px 5px black;
 }

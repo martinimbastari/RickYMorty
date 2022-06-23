@@ -7,15 +7,14 @@
 
 .containerLanding {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0px;
     background: url(../assets/rickandmorty.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
 }
 
 
@@ -24,17 +23,19 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    margin: 0 auto;
+    padding: 5rem;
     border-radius: 10px;
-    background-color: #030c3b95;
+    background-color: rgba(11, 11, 11, 0.3);
+    backdrop-filter: blur(20px);
     box-shadow: 5px 5px 10px  black;
-    width: 90%;
-    height: 90%;
 }
 
 .landingTitle {
-    padding: 30px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 80px;
     color: rgb(245, 241, 234);
+    
 }
 
 .landingTitle span {
@@ -44,12 +45,11 @@
 
 .infoLanding p {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
-    width: 60%;
     margin: 0px auto 0px auto;
     padding: 20px;
-    text-shadow: 1px 1px 5px black;
+    letter-spacing: 1px;
 }
 
 .boton {
@@ -71,4 +71,28 @@
     background: rgb(237, 237, 238);
     color:  rgb(0, 208, 208) ;
     border: 1px solid rgb(4, 210, 210);
+}
+
+@media screen and (max-width: 750px) {
+    .infoLanding {
+        padding: 1rem 0;
+        height: auto;
+    }
+
+    .landingTitle {
+        padding: 5px;
+        font-size: 30px;
+        color: rgb(245, 241, 234);
+    }
+
+    .infoLanding p {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .boton {
+        font-size: 20px;
+        padding: 10px;
+    }
 }

@@ -5,13 +5,13 @@ const Card = ({url, name, id, status, location}) => {
 
     let STATUS = status;
     return(
-        <div className="card">
+        <div className="cards">
             <span className={STATUS}>{status}</span>
             <img src={url} alt={name} />
             <h2 className="title"> {name}</h2>
-            <p className="pDescription location">Location: {location}</p>
+            <p className="pDescription location">Ubicacion: {location}</p>
             <Link to={`/detail/${id}`}>
-                <button className="botonCard">Detail</button>
+                <button className="botonCard">Detalles</button>
             </Link>
         </div>
     )
